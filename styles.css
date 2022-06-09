@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-body {
-    font-family: 'Poppins', sans-serif;
+* {
+    box-sizing: border-box;
 }
 
+html {
+    font-size: large;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    background: linear-gradient(#E1D1DF ,#E18C9E, #D189C5);
+    padding: 20px 20px 0 20px;
 }
 
 nav {
     display: none;
+}
+
+section,
+footer {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -22,9 +40,64 @@ a {
 
 button {
     background-color: black;
+    color: rgba(255,255,255,0.9);
+    border-radius: 8px;
+    padding: 25px;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+}
+
+button strong {
     color: white;
-    border-radius: 10px;
-    padding: 10px;
+}
+
+.logo-and-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    margin-bottom: -7px;
+}
+
+.sm {
+    width: unset;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.hero p, 
+footer a {
+    color: #313433;
+
+}
+.hero p {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.9em;
+}
+
+section p {
+    font-size: .9em;
+}
+
+footer a {
+    font-size: .95em;
+    margin-right: 15px;
 }
 
 @media (min-width: 1024px) {
