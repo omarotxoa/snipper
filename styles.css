@@ -9,8 +9,12 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
+}
+
+body,
+button {
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -40,11 +44,10 @@ a {
 
 button {
     background-color: black;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.8);
     border-radius: 8px;
-    padding: 25px;
+    padding: 20px;
     border: none;
-    width: 100%;
     font-size: 1em;
 }
 
@@ -70,16 +73,13 @@ button strong {
     margin-bottom: -7px;
 }
 
-.sm {
-    width: unset;
-}
-
 h1 {
     font-size: 3em;
 }
 
 .hero p, 
-footer a {
+footer a,
+nav a {
     color: #313433;
 
 }
@@ -100,24 +100,62 @@ footer a {
     margin-right: 15px;
 }
 
-@media (min-width: 1024px) {
-    nav {
-        display: block;
+@media (min-width: 800px) {
+    header {
+        padding: 30px 30px 0 30px;
+    }
+
+    section,
+    footer {
+        padding: 30px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
     }
 
     .menu-toggle {
         display: none;
     }
 
+    nav {
+        display: block;
+    }
+
     nav a {
         padding: 5px;
         margin: 0 15px;
+        font-size: 1.2em;
     }
 
     .search {
-        width: 17px;
+        width: 30px;
         height: auto;
         display: inline;
         vertical-align: middle;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+    section p {
+        font-size: 1.1em;
+    }
+
+    section img {
+        display: block;
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 100% 10%;
+
     }
 }
