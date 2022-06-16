@@ -27,6 +27,28 @@ nav {
     display: none;
 }
 
+nav.mobile {
+    text-align: right;
+}
+
+nav a {
+    padding: 5px;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+.search {
+    width: 30px;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.show {
+    display: block;
+    width: 100%;
+}
+
 section,
 footer {
     padding: 20px;
@@ -181,25 +203,13 @@ footer a {
         font-size: 1.2em;
     }
 
-    .menu-toggle {
+    .menu-toggle,
+    nav.mobile {
         display: none;
     }
 
     nav {
         display: block;
-    }
-
-    nav a {
-        padding: 5px;
-        margin: 0 15px;
-        font-size: 1.2em;
-    }
-
-    .search {
-        width: 30px;
-        height: auto;
-        display: inline;
-        vertical-align: middle;
     }
 
     .hero h1 {

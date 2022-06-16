@@ -1,3 +1,16 @@
+const menu = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.mobile');
+
+menu.addEventListener('click', menuToggle);
+
+function menuToggle() {
+  if(nav.classList == 'mobile') {
+    nav.classList.add('show');
+  } else {
+    nav.classList.remove('show');
+  }
+}
+
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
     for (let i = 0; i < reveals.length; i++) {
@@ -11,5 +24,4 @@ function reveal() {
       }
     }
   }
-
-  window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", reveal);
