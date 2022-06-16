@@ -85,21 +85,17 @@ button strong {
     animation-delay: 1s;
 }
 
-.delay-2 {
-    animation-delay: 2s;
+.delay-1250 {
+    animation-delay: 1250ms;
 }
 
 .delay-1500 {
     animation-delay: 1500ms;
 }
 
-.delay-2500 {
-    animation-delay: 2500ms;
-}
-
 .fallsdown {
     animation-name: fallsdown;
-    animation-duration: 1000ms;
+    animation-duration: 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     transform: translateY(-1000px);
@@ -108,19 +104,6 @@ button strong {
 @keyframes fallsdown{
     from {transform: translateY(-1000px);}
     to {transform: translateY(0);}
-}
-
-.slide-in-left {
-    animation-name: slideinleft;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    transform: translateY(-1000px);
-}
-
-@keyframes slideinleft{
-    from {transform: translateX(-1000px);}
-    to {transform: translateX(0);}
 }
 
 .fade-in {
@@ -135,17 +118,26 @@ button strong {
     to {opacity: 1;}
 }
 
-.fly-up {
-    animation-name: flyup;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
-    transform: translateY(1000px);
+.reveal-right {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 300ms all ease-out;
 }
 
-@keyframes flyup {
-    from {transform: translateY(1000px);}
-    to {transform: translateY(0);}
+.reveal-left {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 300ms all ease-out;
+}
+
+.reveal-fadein {
+    opacity: 0;
+    transition: 300ms all ease-out;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .hero p, 
