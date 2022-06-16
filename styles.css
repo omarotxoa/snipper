@@ -32,7 +32,6 @@ nav.mobile {
 }
 
 nav a {
-    padding: 5px;
     margin: 0 15px;
     font-size: 1.2em;
 }
@@ -62,6 +61,27 @@ img {
 a {
     color: black;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+a:hover {
+    color: black;
+}
+
+a::before {
+    content:'';
+    bottom: 0;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    z-index: -1;
+}
+
+a:hover::before {
+    background: linear-gradient(#E18C9E, #D189C5);
+    height: 100%;
+    transition: 500ms ease all;
 }
 
 button {
@@ -71,10 +91,17 @@ button {
     padding: 20px;
     border: none;
     font-size: 1em;
+    transition: all ease 500ms;
 }
 
 button strong {
     color: white;
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(#E18C9E, #D189C5);
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
 /* logo and menu */
